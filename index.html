@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0d0d0d" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
 
     <meta name="description" content="iManu custom made linktree page in HTML CSS and JavaScript, no frameworks, libraries, all vanilla content">
     <meta name="keywords" content="iManu, developer, iManu dev, iManu.dev, iManu linktree, personal links iManu">
@@ -15,9 +15,13 @@
       src="https://kit.fontawesome.com/2bffaf4059.js"
       crossorigin="anonymous"
     ></script>
-    <title>iManu.dev - All my Links</title>
+    <title>iManu992 - All my Links</title>
   </head>
   <body>
+
+    <div class="privacy-tag" title="Privacy & Cookies">
+      <div class="privacy-container"><img class="shield-svg" src="./assets/privacy_shield.svg" alt="privacy_shield"></div>
+    </div>
     
     <div class="circle-container">
       <div class="circle1"></div>
@@ -29,7 +33,7 @@
     <main>
       <div class="wrapper">
         <div class="logo"><img src="assets/logo.JPEG" alt="logo" /></div>
-        <div class="title">iManu.dev</div>
+        <div class="title">iManu992</div>
         <div class="cta">
           <a href="mailto:imanu.dev992@gmail.com"
             ><i class="fa-solid fa-envelope"></i
@@ -60,11 +64,22 @@
 
     <footer class="footer">
       <p>
-        &copy; <span id="currentYear"></span> iManu.dev aka iManu992 - All right
+        &copy; <span id="currentYear"></span> iManu992 - All right
         reserved
       </p>
     </footer>
 
+    <div class="cookie-overlay" id="cookieOverlay"></div>
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p class="cookie-title">🍪 Do you want some cookies?</p>
+        <p class="cookie-description">We use only essential cookies to ensure the proper functioning of the website. No tracking or external analytics are used.</p>
+        <div class="cookie-buttons">
+          <button id="acceptCookies">Accept</button>
+          <button id="declineCookies">Reject</button>
+        </div>
+      </div>
+    </div>    
     <script src="main.js"></script>
   </body>
 </html>
